@@ -1,0 +1,245 @@
+[
+    {
+    "scenario": "bombing attacks",
+    "events": {
+        "0": "person plans an attack",
+        "1": "person places bomb",
+        "2": "person detonates bomb",
+        "3": "bomb explodes",
+        "4": "people are injured",
+        "5": "people are killed",
+        "6": "calls paramedics",
+        "7": "paramedics arrive",
+        "8": "paramedics treat injured people",
+        "9": "people are taken to hospital"
+    },
+    "gold_edges_for_prediction": [
+        "0->1",
+        "1->2",
+        "2->3",
+        "3->4",
+        "3->5",
+        "3->6",
+        "6->7",
+        "4->8",
+        "8->9"
+    ]
+},
+{
+    "scenario": "business change",
+    "events": {
+        "0": "company plans on acquisition",
+        "1": "offer acquisition deal",
+        "2": "companies negotiate",
+        "3": "companies reach a deal",
+        "4": "government approve the deal",
+        "5": "companies merge"
+    },
+    "gold_edges_for_prediction": [
+        "0->1",
+        "1->2",
+        "2->3",
+        "3->5",
+        "4->5"
+    ]
+},
+{
+    "scenario": "civil unrest",
+    "events": {
+        "0": "people riot",
+        "1": "people breat property",
+        "2": "police arrive",
+        "3": "police fight with rioters",
+        "4": "police arrest rioters",
+        "5": "rioters taken to jail",
+        "6": "police clean the street"
+    },
+    "gold_edges_for_prediction": [
+        "0->1",
+        "0->2",
+        "2->3",
+        "3->4",
+        "4->5",
+        "1->6"
+    ]
+},
+{
+    "scenario": "disater and rescue",
+    "events": {
+        "0": "disaster occurs",
+        "1": "people are injured",
+        "2": "people are killed",
+        "3": "infrastructure is destroyed",
+        "4": "paramedics arrive",
+        "5": "paramedics treat injured people",
+        "6": "injured people are taken to hospital",
+        "7": "people clean up the damage",
+        "8": "people rebuild the infrastructure"
+    },
+    "gold_edges_for_prediction": [
+        "0->1",
+        "1->2",
+        "0->3",
+        "1->4",
+        "2->4",
+        "4->5",
+        "5->6",
+        "3->7",
+        "7->8"
+    ]
+},
+{
+    "scenario": "election",
+    "events": {
+        "0": "candidates sign up",
+        "1": "candidates campaign",
+        "2": "candidates raise money",
+        "3": "candidates debate",
+        "4": "people vote",
+        "5": "votes are counted",
+        "6": "one candidate wins",
+        "7": "winner assumes office"
+    },
+    "gold_edges_for_prediction": [
+        "0->1",
+        "1->2",
+        "0->3",
+        "0->4",
+        "4->5",
+        "5->6",
+        "6->7"
+    ]
+},
+{
+    "scenario": "international conflict",
+    "events": {
+        "0": "countries start a dispute",
+        "1": "armies fight",
+        "2": "countries talk to end the conflict",
+        "3": "countries agree on a deal",
+        "4": "countries sign a treaty"
+    },
+    "gold_edges_for_prediction": [
+        "0->1",
+        "0->2",
+        "1->2",
+        "2->3",
+        "3->4"
+    ]
+},
+{
+    "scenario": "kidnapping",
+    "events": {
+        "0": "criminals plan the kidnapping",
+        "1": "criminals kidnap the victim",
+        "2": "police search for the victim",
+        "3": "kidnappers offer to turn over the victim for a ransom",
+        "4": "police find the kidnappers",
+        "5": "police arrest the kidnappers",
+        "6": "victim is freed"
+    },
+    "gold_edges_for_prediction": [
+        "0->1",
+        "1->2",
+        "1->3",
+        "2->3",
+        "3->4",
+        "4->5",
+        "5->6"
+    ]
+},
+{
+    "scenario": "mass shooting",
+    "events": {
+        "0": "attacker plans the shooting",
+        "1": "attacker record videos to explain why",
+        "2": "attacker goes to crime place",
+        "3": "attacker shoots",
+        "4": "people are injured",
+        "5": "people are killed",
+        "6": "police arrive",
+        "7": "police arrest attacker",
+        "8": "police kill attacker"
+    },
+    "gold_edges_for_prediction": [
+        "0->1",
+        "0->2",
+        "2->3",
+        "3->4",
+        "3->5",
+        "3->6",
+        "6->7",
+        "6->8"
+    ]
+},
+{
+    "scenario": "pandemic outbreak",
+    "events": {
+        "0": "virus infects a person",
+        "1": "person spreads virus",
+        "2": "person gets sick",
+        "3": "person taken to hospital",
+        "4": "person is treated",
+        "5": "people die",
+        "6": "Scientists take samples of the virus",
+        "7": "Scientists develop medicine",
+        "8": "Scientists develop vaccines",
+        "9": "vaccines are distributed"
+    },
+    "gold_edges_for_prediction": [
+        "0->1",
+        "0->2",
+        "2->3",
+        "3->4",
+        "4->5",
+        "0->6",
+        "6->7",
+        "6->8",
+        "8->9"
+    ]
+},
+{
+    "scenario": "sports game",
+    "events": {
+        "0": "people arrive at a stadium",
+        "1": "two teams play a game",
+        "2": "one team wins",
+        "3": "fans celebrate",
+        "4": "fans become sad"
+    },
+    "gold_edges_for_prediction": [
+        "0->1",
+        "1->2",
+        "2->3",
+        "2->4"
+    ]
+},
+{
+    "scenario": "terrorism attack",
+    "events": {
+        "0": "terrorist plans an attack",
+        "1": "terrorist excutes an attack",
+        "2": "attack injures people",
+        "3": "attack kills people",
+        "4": "atttack destroyes infrastructure",
+        "5": "calls paramedics",
+        "6": "paramedics arrives",
+        "7": "paramedics treat the injured",
+        "8": "paramedics take the injured to hospital",
+        "9": "news reports the attack",
+        "10": "a terrorist group claims responsibility"
+    },
+    "gold_edges_for_prediction": [
+        "0->1",
+        "1->2",
+        "1->3",
+        "1->4",
+        "1->5",
+        "5->6",
+        "6->7",
+        "7->8",
+        "1->9",
+        "1->10"
+    ]
+}
+]

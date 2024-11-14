@@ -1,0 +1,638 @@
+class WalkIntoStore:
+
+    title = "walk into store"
+    steps = 9
+
+    def stepE(self):
+        return "stop for red lights and stop signs"
+
+    def stepC(self):
+        return "shut car door and press lock button"
+
+    def stepH(self):
+        return "get in car and go to store"
+
+    def stepG(self):
+        return "pull into store driveway"
+
+    def stepA(self):
+        return "park the car"
+
+    def stepB(self):
+        return "take the key out of the ignition"
+
+    def stepD(self):
+        return "get out of the car"
+
+    def stepI(self):
+        return "walk into store"
+
+    def stepF(self):
+        return "push gas pedal to move vehicle"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a story about "walk into store". It was a sunny afternoon when I decided to visit the local store to pick up some groceries. The journey began with me getting in my car, placing the key in the ignition, and starting the engine. I knew the route well, but today I was particularly mindful of the traffic rules. As I drove, I made sure to stop for red lights and stop signs, ensuring safety and compliance with the law. After navigating through the streets, I finally reached the store's vicinity. The familiar sight of the store's driveway appeared, and I smoothly pulled into it. Finding a parking spot was easy, and I carefully parked the car, making sure it was properly positioned. With the car safely parked, I took the key out of the ignition, marking the end of its role in this journey. Next, I got out of the car, feeling the warm sun on my skin. Before walking away, I shut the car door with a soft thud and pressed the lock button, hearing the reassuring beep that signaled the car was secure. Now, with everything in order, I walked towards the store's entrance. The automatic doors slid open as I approached, welcoming me into the cool, air-conditioned interior. I was finally inside the store, ready to tackle the shopping list I had prepared earlier. The sequence of events, from getting in the car to walking into the store, unfolded smoothly, thanks to my adherence to the necessary steps and their proper order. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepF -> stepE",
+            "stepE -> stepG",
+            "stepG -> stepA",
+            "stepB -> stepD",
+            "stepA -> stepB",
+            "stepD -> stepC",
+            "stepC -> stepI",
+            "stepH -> stepF",
+        ]
+# END
+
+class PickOutItems:
+
+    title = "pick out items"
+    steps = 7
+
+    def stepG(self):
+        return "pick out items"
+
+    def stepC(self):
+        return "visually locate needed item"
+
+    def stepD(self):
+        return "walk down necessary isle"
+
+    def stepE(self):
+        return "walk toward necessary isle"
+
+    def stepA(self):
+        return "locate sign indicating which isle has items"
+
+    def stepF(self):
+        return "drive to the store after work"
+
+    def stepB(self):
+        return "find needed item"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a story about "pick out items". After a long day at work, my mind was already racing through the list of chores I had to complete before I could call it a day. The most pressing task was to pick out some items from the store for dinner. So, I decided to drive to the store, a decision that marked the beginning of my little adventure. Upon arriving at the store, the first thing I did was to locate the sign indicating which aisle had the items I needed. It was a bit of a puzzle, navigating through the colorful promotions and various sections, but I managed to find the sign hanging above, promising the location of my sought-after ingredients. With the sign as my guide, I walked toward the necessary aisle. The store was unusually crowded, and I had to weave through a sea of shoppers, carts filled to the brim, and the occasional store clerk restocking shelves. It felt like a small victory when I finally reached the entrance of the aisle. Walking down the necessary aisle, I was surrounded by an array of products. The shelves were packed with different brands and varieties, each vying for attention with bright labels and promises of quality. It was here that I had to visually locate the needed item. My eyes scanned the shelves, moving from one product to another, until they landed on the exact item I was looking for. Finding the needed item felt like finding a treasure. I reached out, grabbed it, and placed it in my cart with a sense of accomplishment. It was the last piece of the puzzle, the final step before I could head to the checkout and then home to cook dinner. Finally, with the item securely in my cart, I picked out the rest of the items on my list. Each selection was easier now, as if the first victory had paved the way for a smoother journey through the rest of my shopping. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepA -> stepE",
+            "stepE -> stepD",
+            "stepD -> stepC",
+            "stepC -> stepB",
+            "stepB -> stepG",
+            "stepF -> stepA",
+        ]
+# END
+
+class GoOutsideInAnOpenArea:
+
+    title = "Go outside in an open area"
+    steps = 7
+
+    def stepG(self):
+        return "Go outside in an open area"
+
+    def stepB(self):
+        return "push door open"
+
+    def stepD(self):
+        return "walk body through door"
+
+    def stepF(self):
+        return "get dressed in warm clothes"
+
+    def stepC(self):
+        return "reach towards door handle"
+
+    def stepA(self):
+        return "walk to house door"
+
+    def stepE(self):
+        return "grip handle with hand"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a story about "Go outside in an open area". It was a chilly morning, and I had decided to take a walk in the open area near my house to clear my mind. The first thing I did was get dressed in warm clothes, making sure I was comfortable enough to face the cold outside. Once I was fully dressed, I walked to the house door, feeling the anticipation of the fresh air that awaited me. Reaching towards the door handle, I felt a slight shiver run through me, not from the cold, but from the excitement of stepping out into the open. I gripped the handle with my hand, the metal cold and firm under my touch. With a gentle push, I opened the door, ready to embrace the world outside. I walked my body through the door, crossing the threshold that separated the warmth of my home from the crisp outside air. The moment I stepped outside, I felt a sense of freedom, as if all my worries were left behind, confined within the walls of my house. Finally, I was outside in an open area, the vast sky above me and the earth under my feet. I took a deep breath, filling my lungs with the cold, fresh air, and let out a sigh of contentment. It was exactly what I needed, a moment of peace and solitude in the embrace of nature. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepA -> stepC",
+            "stepC -> stepE",
+            "stepE -> stepB",
+            "stepB -> stepD",
+            "stepD -> stepG",
+            "stepF -> stepA",
+        ]
+# END
+
+class PutKeyFobAwayInPocket:
+
+    title = "put key fob away in pocket"
+    steps = 7
+
+    def stepA(self):
+        return "move key towards pocket"
+
+    def stepG(self):
+        return "put key fob away in pocket"
+
+    def stepE(self):
+        return "open the pocket"
+
+    def stepC(self):
+        return "release hand from key"
+
+    def stepF(self):
+        return "release unlock button"
+
+    def stepB(self):
+        return "move key inside pocket"
+
+    def stepD(self):
+        return "find the pocket"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a story about "put key fob away in pocket". It was a chilly evening, and I had just finished a long day at work. As I approached my car in the dimly lit parking lot, I pressed the unlock button on my key fob, hearing the comforting sound of my car unlocking. With a sigh of relief, knowing I was moments away from the warmth of my car, I decided it was time to put the key fob away. First, I had to find the pocket where I usually keep my keys. It's always a bit of a search with my bulky winter coat, but after a moment, my hand brushed against the familiar fabric of the pocket. Knowing where my pocket was, I instinctively began to open it, preparing to stow away the key fob. Simultaneously, I moved the key towards the pocket, a motion I've done countless times, yet it felt deliberate tonight, perhaps due to the cold making every action seem more pronounced. With the pocket now open and the key fob moving towards it, I carefully maneuvered the key inside the pocket. It's a small action, but in the cold, every little movement feels significant. Once the key was securely inside the pocket, I released the unlock button on the key fob, a habit I've developed to ensure I don't accidentally press it again. With the key fob nestled in my pocket, I finally released my hand from the key, feeling the cold air rush against my now empty hand. The final step was to put the key fob away in the pocket completely, ensuring it was safe and wouldn't fall out as I made my way home. With the key fob securely in my pocket, I zipped it up, a small but satisfying conclusion to the simple task. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepD -> stepE",
+            "stepD -> stepA",
+            "stepA -> stepB",
+            "stepE -> stepB",
+            "stepB -> stepC",
+            "stepC -> stepG",
+            "stepF -> stepD",
+        ]
+# END
+
+class RideAnElephant:
+
+    title = "ride an elephant"
+    steps = 7
+
+    def stepF(self):
+        return "decided to ride an elephant"
+
+    def stepB(self):
+        return "Get help onto the elephant"
+
+    def stepE(self):
+        return "Search for locations where elephants can be ridden"
+
+    def stepD(self):
+        return "Make a reservation online"
+
+    def stepA(self):
+        return "Go online via a computer or phone"
+
+    def stepC(self):
+        return "Show up to reservation"
+
+    def stepG(self):
+        return "ride an elephant"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a story about "ride an elephant". One sunny morning, I woke up with a sudden urge for adventure, something out of the ordinary. That's when the idea struck me - I decided to ride an elephant. It was a childhood dream of mine, but I never thought it would be possible until now. Fueled by excitement, I immediately went online via my computer to see if this could actually be turned into reality. After a bit of searching, I found a few locations where elephants could be ridden. It was fascinating to see that such experiences were accessible. Among the options, one place caught my eye due to its ethical treatment of animals and positive reviews. Without hesitation, I made a reservation online for the upcoming weekend. It felt surreal, booking something so unique and thrilling. The days leading up to the reservation were filled with anticipation. I could hardly wait. Finally, the day arrived. I showed up to the reservation, my heart pounding with excitement and a bit of nervousness. The staff was incredibly welcoming and understanding of my excitement. They could see it was my first time and offered the necessary help to get onto the elephant safely. Getting help onto the elephant was an experience in itself. The sheer size and gentle nature of the elephant were awe-inspiring. Once I was securely seated, the moment I had been waiting for finally came - it was time to ride the elephant. The gentle giant moved slowly at first, allowing me to adjust to the height and motion. As we ventured through the designated path, I felt a connection with the majestic creature. It was an unforgettable experience, one that made me appreciate the beauty of these magnificent animals even more. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepA -> stepE",
+            "stepE -> stepD",
+            "stepD -> stepC",
+            "stepC -> stepB",
+            "stepB -> stepG",
+            "stepF -> stepA",
+        ]
+# END
+
+class UnlockBottomLock:
+
+    title = "unlock bottom lock"
+    steps = 7
+
+    def stepE(self):
+        return "stick key in bottom lock"
+
+    def stepC(self):
+        return "look at keyring"
+
+    def stepG(self):
+        return "unlock bottom lock"
+
+    def stepF(self):
+        return "unlock top lock"
+
+    def stepB(self):
+        return "select key for bottom lock"
+
+    def stepA(self):
+        return "turn key counter clockwise"
+
+    def stepD(self):
+        return "pull key out of top lock"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a story about "unlock bottom lock". It was a chilly evening, and I had just returned from a long day at work. My hands were slightly trembling, not just from the cold, but also from the anticipation of getting inside my warm house and finally relaxing. I reached the front door and was immediately reminded of the sequence I had to follow to unlock it. The process was almost like a ritual, one that I had performed countless times, yet it demanded precision each time. The first thing I did, as always, was to pull the key out of the top lock. This action was a signal to my brain that the unlocking process had begun. It was an automatic motion, one that I had done without thinking, but today, I narrated each step in my mind, aware of the sequence I was to follow. Next, I looked at my keyring. The keys jingled softly as I searched for the specific one that would unlock the bottom lock. The sound was oddly comforting, a familiar melody in the quiet of the evening. Once my fingers wrapped around the correct key, a sense of accomplishment washed over me. It was a small victory, but in that moment, it felt significant. With the key for the bottom lock selected, I proceeded to stick it in the bottom lock. The metal was cold against my fingertips, a stark contrast to the warmth I was longing for. I turned the key counter-clockwise, feeling the lock give way under the gentle pressure. It was a satisfying sensation, one that signaled I was one step closer to the comfort of my home. Finally, I unlocked the bottom lock. The sound of the mechanism turning was like music to my ears, a sign that I was almost there. But before I could push the door open and step into the warmth, I remembered the top lock. With a swift motion, I unlocked it, completing the sequence. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepD -> stepC",
+            "stepC -> stepB",
+            "stepA -> stepG",
+            "stepB -> stepE",
+            "stepE -> stepA",
+            "stepF -> stepD",
+        ]
+# END
+
+class SitInTheFrontSeatOfTheCar:
+
+    title = "sit in the front seat of the car"
+    steps = 7
+
+    def stepC(self):
+        return "open the car door"
+
+    def stepD(self):
+        return "walk out of the house"
+
+    def stepB(self):
+        return "put clothes on"
+
+    def stepG(self):
+        return "sit in the front seat of the car"
+
+    def stepF(self):
+        return "decided to sit in the front seat of the car"
+
+    def stepE(self):
+        return "take a shower"
+
+    def stepA(self):
+        return "unlock the car door"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a story about "sit in the front seat of the car". One morning, I woke up with a sudden urge to drive to the countryside. The tranquility of the open road and the fresh air seemed like the perfect escape from the hustle and bustle of city life. However, before embarking on this spontaneous adventure, there were a series of steps I needed to follow, ensuring everything was in order. Firstly, I decided to sit in the front seat of the car. This decision sparked a sequence of actions that needed to be meticulously followed. I realized that I couldn't just dash out of the house in my pajamas, so I headed to the bathroom to take a shower. The warm water was refreshing, and it helped me wake up fully, preparing me for the day ahead. After drying off, I put clothes on, choosing something comfortable yet suitable for a drive. Once dressed, I walked out of the house, feeling the cool morning air brush against my skin. It was a beautiful day, and the sun was just beginning to rise, painting the sky in hues of orange and pink. Next, I approached the car and unlocked the car door. It was a small but significant action, marking the beginning of my journey. After unlocking it, I opened the car door with a sense of anticipation. The car had been sitting idle for too long, and it was time to bring it back to life. Finally, I sat in the front seat of the car. The seat was familiar and comfortable, welcoming me like an old friend. I inserted the key into the ignition, turned it, and the engine roared to life. The sound was music to my ears, a promise of the adventures that lay ahead. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepB -> stepD",
+            "stepE -> stepB",
+            "stepD -> stepA",
+            "stepA -> stepC",
+            "stepC -> stepG",
+            "stepF -> stepE",
+        ]
+# END
+
+class AssembleTacosAsDesired:
+
+    title = "assemble tacos as desired"
+    steps = 7
+
+    def stepB(self):
+        return "Chop up vegetables"
+
+    def stepC(self):
+        return "Remove taco shells from package"
+
+    def stepE(self):
+        return "Place cheese on meat"
+
+    def stepD(self):
+        return "Place vegetables on cheese"
+
+    def stepA(self):
+        return "Place meat into taco shells"
+
+    def stepG(self):
+        return "assemble tacos as desired"
+
+    def stepF(self):
+        return "cook desired meat(s)"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a story about "assemble tacos as desired". It was a sunny Saturday afternoon when I decided to treat myself to some homemade tacos. I had all the ingredients laid out on the kitchen counter, ready to embark on a culinary adventure. The first thing I did was to cook the desired meats. I had chosen a mix of beef and chicken, seasoned them well, and let them sizzle on the stove. The aroma was tantalizing, and it set the perfect tone for the steps that were to follow. Once the meats were cooked to perfection, I moved on to the next step, which was to chop up the vegetables. I had an array of colorful veggies - tomatoes, lettuce, onions, and bell peppers. I chopped them finely, thinking about the crunch and freshness they would add to my tacos. With the vegetables chopped, it was time to remove the taco shells from the package. I had opted for the crunchy kind, imagining the satisfying sound they would make with each bite. I carefully placed them on a tray, ready to be filled with the delicious ingredients. The next step was to place the meat into the taco shells. The cooked meats were juicy and aromatic, and I filled each shell generously. Following that, I placed cheese on the meat. The heat from the meat began to melt the cheese slightly, creating a gooey layer of deliciousness. After the cheese, it was time to place the vegetables on top. The colorful veggies not only added a crunch but also made the tacos look vibrant and inviting. It was all coming together beautifully. Finally, it was time to assemble the tacos as desired. I added some final touches - a dollop of sour cream, a sprinkle of cilantro, and a dash of hot sauce for that extra kick. Each taco was a masterpiece, a perfect balance of flavors and textures. As I sat down to enjoy the fruits of my labor, I couldn't help but feel a sense of accomplishment. The process of making the tacos, from cooking the meats to the final assembly, was therapeutic. Each step, followed in the right order, contributed to the creation of something truly special. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepC -> stepA",
+            "stepB -> stepC",
+            "stepE -> stepD",
+            "stepD -> stepG",
+            "stepA -> stepE",
+            "stepF -> stepB",
+        ]
+# END
+
+class PutAwayPlasterKit:
+
+    title = "put away plaster kit"
+    steps = 7
+
+    def stepC(self):
+        return "make sure job is done"
+
+    def stepE(self):
+        return "find excess materials"
+
+    def stepF(self):
+        return "clean up the mess on the floor"
+
+    def stepG(self):
+        return "put away plaster kit"
+
+    def stepA(self):
+        return "gather up trash"
+
+    def stepB(self):
+        return "close the plaster kit"
+
+    def stepD(self):
+        return "look at wall"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a story about "put away plaster kit". After a long day of working on the new wall in my room, I stood back to admire my handiwork. The plastering job was finally done, but the aftermath was a scene of chaos. My first instinct was to ensure that the job was indeed complete. I scrutinized the wall closely, looking for any imperfections or missed spots. Satisfied with the smooth, even surface, I nodded to myself, "The job is done." However, my satisfaction was short-lived as my gaze fell to the floor. The mess was undeniable. Plaster dust, bits of packaging, and excess materials were scattered everywhere. It was time to clean up. I started by gathering up the trash, picking up empty bags and bits of paper that had served their purpose. Next, I found the excess materials - leftover plaster that could be saved for future projects. I carefully collected these, ensuring nothing useful went to waste. With the trash and excess materials set aside, I focused on the mess on the floor. Sweeping and mopping, I worked diligently to ensure no trace of my day's work remained on the floor. It was a tedious task, but necessary. Once the floor shone clean, I took a moment to look at the wall again, this time with a sense of finality. The clean room and the pristine wall were a testament to the effort put in. Now, it was time to put everything away. I closed the plaster kit, securing its contents for the next project. With everything accounted for, I finally put away the plaster kit, placing it back on its shelf. The room looked as if nothing had happened, save for the freshly plastered wall standing proudly in the middle. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepE -> stepG",
+            "stepD -> stepC",
+            "stepC -> stepG",
+            "stepB -> stepG",
+            "stepA -> stepG",
+            "stepF -> stepE",
+            "stepF -> stepD",
+            "stepF -> stepB",
+            "stepF -> stepA",
+        ]
+# END
+
+class GetInformationOnTheClubFromFriend:
+
+    title = "Get information on the club from friend"
+    steps = 7
+
+    def stepF(self):
+        return "decided to Get information on the club from friend"
+
+    def stepD(self):
+        return "Start talking about clubs"
+
+    def stepG(self):
+        return "Get information on the club from friend"
+
+    def stepB(self):
+        return "Wait for friend to pick up"
+
+    def stepC(self):
+        return "Get the name of a club from friend"
+
+    def stepA(self):
+        return "Call a friend"
+
+    def stepE(self):
+        return "Have some small talk"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a story about "Get information on the club from friend". One sunny afternoon, I found myself pondering over the idea of joining a new club. My curiosity was piqued by stories I'd heard, but I needed more concrete information. Thus, I decided to get information on the club from a friend who I knew was well-connected and knowledgeable about such matters. I picked up my phone and dialed my friend's number, initiating the process. There was a brief moment of anticipation as I waited for my friend to pick up. The ringtone echoed in my ears, a prelude to the valuable information I was about to receive. Once my friend answered, we didn't dive straight into the matter at hand. Instead, we engaged in some small talk, catching up on each other's lives and sharing a laugh or two. It was a warm-up, a gentle segue into the main topic of our conversation. After a few minutes, I steered the conversation towards clubs, expressing my interest and curiosity. My friend, sensing my eagerness, began to share their knowledge. They started talking about various clubs, but one in particular caught my attention. My friend mentioned the name of a club that seemed to align perfectly with my interests and aspirations. Excited, I probed further, seeking more detailed information about this specific club. My friend, happy to assist, provided me with all the details I needed - the club's activities, meeting times, and how it could enrich my life and broaden my horizons. By the end of our conversation, I felt enlightened and grateful. My friend had not only given me the name of a club that intrigued me but had also shared their personal insights and experiences, which made me even more eager to join. This is a story that began with a decision to seek out information and ended with a satisfying exchange between friends. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepA -> stepB",
+            "stepB -> stepE",
+            "stepB -> stepD",
+            "stepE -> stepC",
+            "stepD -> stepC",
+            "stepC -> stepG",
+            "stepF -> stepA",
+        ]
+# END
+
+class DoSomethingExciting:
+
+    title = "do something exciting"
+    steps = 7
+
+    def stepG(self):
+        return "do something exciting"
+
+    def stepF(self):
+        return "decided to do something exciting"
+
+    def stepB(self):
+        return "enter the place"
+
+    def stepD(self):
+        return "go online to book trip"
+
+    def stepA(self):
+        return "Think of what want to do"
+
+    def stepC(self):
+        return "book the experience online"
+
+    def stepE(self):
+        return "go to the destination"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a story about "do something exciting". One day, I woke up feeling an unusual surge of energy and a craving for adventure. It was then I decided to do something exciting. The idea was thrilling but vague. I needed to pinpoint exactly what I wanted to do. So, I took a moment to think about what I wanted to do. The possibilities seemed endless, but after some thought, I decided that a trip would satisfy my craving for adventure. Next, I went online to book the trip. The internet was a treasure trove of information and offers. After browsing through various destinations and activities, I found the perfect adventure that called out to me. Without hesitation, I booked the experience online. The anticipation of the trip filled me with excitement, and I could hardly wait to embark on this adventure. Once the booking was confirmed, it was time to go to the destination. The journey to the place was an adventure in itself, filled with anticipation and excitement. Upon arrival, I entered the place that promised an unforgettable experience. It was more breathtaking in person than I had imagined. Finally, I got to do something exciting. The experience was exhilarating, surpassing all my expectations. It was a blend of thrill, joy, and a sense of accomplishment. The adventure was not just about the activities but also about stepping out of my comfort zone and embracing the unknown. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepA -> stepD",
+            "stepD -> stepC",
+            "stepC -> stepE",
+            "stepE -> stepB",
+            "stepB -> stepG",
+            "stepF -> stepA",
+        ]
+# END
+
+class PickOutAWorkoutPlan:
+
+    title = "pick out a workout plan"
+    steps = 7
+
+    def stepD(self):
+        return "make a list of cons for the plan"
+
+    def stepB(self):
+        return "decide if the plan is suitable"
+
+    def stepF(self):
+        return "find a workout plan"
+
+    def stepC(self):
+        return "make a list of pros for the plan"
+
+    def stepG(self):
+        return "pick out a workout plan"
+
+    def stepA(self):
+        return "compare the plan to other available plans"
+
+    def stepE(self):
+        return "see if the pros outweigh the cons"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a story about "pick out a workout plan". It all began on a sunny Monday morning when I decided it was finally time to take my fitness journey seriously. The first step, I realized, was to find a workout plan that suited my goals and lifestyle. So, I embarked on the quest to find the perfect plan. After some searching, I found a workout plan that seemed promising. However, I knew better than to jump in without a thorough evaluation. I decided to make a list of pros for the plan, noting down all the benefits it offered, such as comprehensive exercises, suitability for beginners, and a balanced approach to fitness. Feeling optimistic, I then proceeded to make a list of cons, considering factors like the time commitment required, the level of difficulty, and whether it required equipment I didn't have. With both lists at hand, I compared the plan to other available plans, weighing my options carefully. It was crucial to see if the pros outweighed the cons, as this would determine if the plan was truly suitable for me. After a thoughtful comparison and consideration, I concluded that the pros did indeed outweigh the cons. Feeling confident in my analysis, I decided if the plan was suitable. It was a perfect match for my goals, availability, and current fitness level. With that decision made, I finally picked out my workout plan. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepA -> stepB",
+            "stepC -> stepE",
+            "stepB -> stepG",
+            "stepD -> stepE",
+            "stepE -> stepB",
+            "stepF -> stepA",
+            "stepF -> stepC",
+            "stepF -> stepD",
+        ]
+# END
+
+class ConnectPhoneToTheWifi:
+
+    title = "connect phone to the wifi"
+    steps = 7
+
+    def stepB(self):
+        return "type in password"
+
+    def stepD(self):
+        return "locate settings app"
+
+    def stepE(self):
+        return "open connections tab"
+
+    def stepA(self):
+        return "open settings app"
+
+    def stepC(self):
+        return "find wifi network"
+
+    def stepG(self):
+        return "connect phone to the wifi"
+
+    def stepF(self):
+        return "unlock the phone screen"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a story about "connect phone to the wifi". One day, I found myself in a quaint little coffee shop tucked away in the corner of the city, a perfect spot to catch up on some work. As I settled down with my laptop, I realized that my phone desperately needed an internet connection to receive an important email. The task seemed simple enough, but it required a sequence of steps to be followed meticulously. First, I had to unlock my phone screen, which was the gateway to all operations. The screen lit up, welcoming me with its familiar glow. Next, I needed to locate the settings app. This was crucial because everything related to connectivity could be managed from there. Scrolling through the apps, I finally found the settings icon and tapped on it. Once the settings app was open, my next move was to open the connections tab. This section housed all the network and connectivity options, a central hub for getting my phone onto the internet. After tapping on the connections tab, I was presented with a list of available networks. Among them, I had to find the specific wifi network that the coffee shop provided. The network name was displayed on a small chalkboard at the counter, a detail I had almost missed. After finding the correct network, the next step was to type in the password. The barista had scribbled it on a piece of paper for me, a mix of letters and numbers that promised access to the digital world. Carefully, I entered the password, making sure each character was correct. Finally, the moment of truth arrived. I tapped on the connect button, and after a brief moment of suspense, my phone was connected to the wifi. A small icon at the top of the screen confirmed that I was now online, ready to receive the email that I had been anxiously waiting for. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepD -> stepA",
+            "stepA -> stepE",
+            "stepE -> stepC",
+            "stepC -> stepB",
+            "stepB -> stepG",
+            "stepF -> stepD",
+        ]
+# END
+
+class PracticeTurningBodyOverAndLandingOnFeet:
+
+    title = "practice turning body over and landing on feet"
+    steps = 7
+
+    def stepA(self):
+        return "place protective mats down"
+
+    def stepF(self):
+        return "practice putting hands on the ground and shifting weight"
+
+    def stepE(self):
+        return "practice for exercise"
+
+    def stepC(self):
+        return "stretch for exercise"
+
+    def stepD(self):
+        return "find cleared area in field"
+
+    def stepG(self):
+        return "practice turning body over and landing on feet"
+
+    def stepB(self):
+        return "remove any jewelry"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a story about 'practice turning body over and landing on feet'. One sunny morning, I decided it was the perfect day to improve my gymnastic skills, specifically focusing on turning my body over and landing on my feet. I knew it would require patience, practice, and a methodical approach. So, I started by finding a cleared area in the field near my house. It was spacious and free of obstacles, ideal for what I had in mind. Before getting into the physical aspect of my practice, I remembered the importance of removing any jewelry to prevent injuries. So, I took off my watch and rings, placing them safely aside. Next, I laid down protective mats on the ground. These mats were crucial for my safety, providing a soft landing surface that would minimize the risk of injury during practice. With the area prepared, I proceeded to stretch for the exercise. Stretching was essential to warm up my muscles and increase my flexibility, both vital for successfully turning my body over and landing on my feet. After a thorough stretching session, I felt more limber and ready to tackle the main part of my practice. Now it was time to practice for the exercise itself. I began by practicing putting my hands on the ground and shifting my weight. This step was crucial for gaining the necessary momentum and understanding the mechanics of turning my body over. It took several attempts, but with each try, I felt more confident in my movements. Finally, the moment had come to practice turning my body over and landing on my feet. It was challenging at first, and I had a few unsuccessful attempts. However, I persisted, drawing on the muscle memory I had developed from my previous exercises. With determination and focus, I managed to execute the move successfully, landing on my feet with a sense of accomplishment. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepD -> stepB",
+            "stepD -> stepA",
+            "stepA -> stepC",
+            "stepB -> stepC",
+            "stepC -> stepE",
+            "stepE -> stepG",
+            "stepF -> stepD",
+        ]
+# END
+
+class LearnANewSongToSing:
+
+    title = "learn a new song to sing"
+    steps = 8
+
+    def stepE(self):
+        return "listen to several songs"
+
+    def stepB(self):
+        return "listen to the song several times"
+
+    def stepF(self):
+        return "look up the lyrics"
+
+    def stepH(self):
+        return "learn a new song to sing"
+
+    def stepG(self):
+        return "decided to learn a new song to sing"
+
+    def stepD(self):
+        return "look up the chords"
+
+    def stepC(self):
+        return "practice singing the song"
+
+    def stepA(self):
+        return "pick out a catchy song"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a story about 'learn a new song to sing'. One day, I decided to learn a new song to sing. This decision set me on a journey that began with listening to several songs. I was searching for that one catchy tune that would stick in my mind and heart, something that resonated with my mood and aspirations. After some time, I found it - a melody so captivating that I couldn't help but pick it out as the one I wanted to master. With the song chosen, my next step was to immerse myself in it completely. I listened to the song several times, letting its rhythm and nuances sink in. To ensure I could follow along and eventually sing it myself, I looked up the lyrics. The words were beautiful, and I felt a connection to them. I also looked up the chords, as I wanted to accompany myself on the guitar. This preparation phase was crucial, as it laid the foundation for what was to come. Now that I was familiar with the song's structure, lyrics, and chords, it was time to practice singing the song. This step was both challenging and rewarding. I spent hours merging the lyrics with the melodies and harmonizing my voice with the chords I had learned. It was a process of trial and error, filled with moments of frustration but also with breakthroughs and joy. Finally, after much practice and dedication, I learned the new song to sing. The feeling of accomplishment was overwhelming. I had taken a journey from merely deciding to learn a new song to actually being able to sing it with confidence and emotion. It was a testament to the power of persistence and passion. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepE -> stepA",
+            "stepA -> stepF",
+            "stepA -> stepD",
+            "stepA -> stepB",
+            "stepF -> stepC",
+            "stepD -> stepC",
+            "stepB -> stepC",
+            "stepC -> stepH",
+            "stepG -> stepE",
+        ]
+
+# END
+

@@ -1,0 +1,638 @@
+class WalkIntoStore:
+
+    title = "walk into store"
+    steps = 9
+
+    def stepE(self):
+        return "stop for red lights and stop signs"
+
+    def stepC(self):
+        return "shut car door and press lock button"
+
+    def stepH(self):
+        return "get in car and go to store"
+
+    def stepG(self):
+        return "pull into store driveway"
+
+    def stepA(self):
+        return "park the car"
+
+    def stepB(self):
+        return "take the key out of the ignition"
+
+    def stepD(self):
+        return "get out of the car"
+
+    def stepI(self):
+        return "walk into store"
+
+    def stepF(self):
+        return "push gas pedal to move vehicle"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a news report about 'walk into store'. In a sequence of events that unfolded with precision and adherence to traffic laws, a local resident demonstrated the meticulous steps involved in a routine yet essential task: walking into a store. The journey began with the individual getting in their car, setting the stage for a series of actions that would lead them to their destination. The first significant action was to push the gas pedal to move the vehicle, a necessary step to propel the car forward. However, safety and legal compliance were paramount, as the driver conscientiously stopped for red lights and stop signs, ensuring a safe and lawful journey. This adherence to traffic rules naturally led to the next phase of the trip, pulling into the store driveway, signaling the near completion of the travel portion of this endeavor. Upon arrival at the store's parking area, the driver executed a flawless park of the car. This act was followed by the careful removal of the key from the ignition, a step that signifies the transition from driving to preparing to exit the vehicle. With the car securely parked and the engine turned off, the individual then got out of the car, moving on to the next phase of their journey. Exiting the vehicle was not the final step before entering the store. The driver took a moment to shut the car door and press the lock button, ensuring the security of their vehicle before proceeding. With the car locked and secure, the individual then walked into the store, completing the series of steps required for this seemingly simple yet intricate task. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepF -> stepE",
+            "stepE -> stepG",
+            "stepG -> stepA",
+            "stepB -> stepD",
+            "stepA -> stepB",
+            "stepD -> stepC",
+            "stepC -> stepI",
+            "stepH -> stepF",
+        ]
+# END
+
+class PickOutItems:
+
+    title = "pick out items"
+    steps = 7
+
+    def stepG(self):
+        return "pick out items"
+
+    def stepC(self):
+        return "visually locate needed item"
+
+    def stepD(self):
+        return "walk down necessary isle"
+
+    def stepE(self):
+        return "walk toward necessary isle"
+
+    def stepA(self):
+        return "locate sign indicating which isle has items"
+
+    def stepF(self):
+        return "drive to the store after work"
+
+    def stepB(self):
+        return "find needed item"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a news report about 'pick out items'. In a world where efficiency and time management are of the essence, understanding the sequence of actions leading to everyday tasks can significantly enhance our daily routines. Today, we delve into the seemingly simple yet intricate process of picking out items from a store, a task that many of us undertake regularly without much thought to the steps involved. The journey begins immediately after work, as individuals drive to the store, marking the initiation of the item-picking process. This step is crucial as it sets the stage for the subsequent actions that lead to the successful acquisition of needed items. Upon arrival at the store, the first task is to locate the sign indicating which aisle has the items. This step is pivotal as it directs the shopper towards their desired destination within the store, saving time and effort by avoiding aimless wandering. Following the identification of the correct aisle through the signage, the individual then proceeds to walk toward the necessary aisle. This movement is guided by the information gathered in the previous step, ensuring that the shopper is on the right path towards locating their needed items. The next phase involves walking down the necessary aisle. This step allows the shopper to be in the immediate vicinity of the desired items, setting the stage for the crucial task of visually locating the needed item. Visual identification of the needed item is the next critical step. It involves scanning the shelves and displays to find the specific item the shopper has come to purchase. This step requires keen observation skills and sometimes patience, especially if the item is not immediately visible. Once the item is visually located, the shopper can then find the needed item with precision. This step is a culmination of the visual search, where the shopper physically identifies and confirms the item they intend to pick out. The final step in this meticulously sequenced process is to pick out the items. This action represents the successful completion of the task, where the shopper takes the located item and adds it to their cart or basket, ready to proceed to the checkout. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepA -> stepE",
+            "stepE -> stepD",
+            "stepD -> stepC",
+            "stepC -> stepB",
+            "stepB -> stepG",
+            "stepF -> stepA",
+        ]
+# END
+
+class GoOutsideInAnOpenArea:
+
+    title = "Go outside in an open area"
+    steps = 7
+
+    def stepG(self):
+        return "Go outside in an open area"
+
+    def stepB(self):
+        return "push door open"
+
+    def stepD(self):
+        return "walk body through door"
+
+    def stepF(self):
+        return "get dressed in warm clothes"
+
+    def stepC(self):
+        return "reach towards door handle"
+
+    def stepA(self):
+        return "walk to house door"
+
+    def stepE(self):
+        return "grip handle with hand"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a news report about 'Go outside in an open area'. In a sequence of events that unfolded with precision and care, an individual embarked on a journey to step outside into the open air, a simple yet profound act that was meticulously executed. The process began indoors, with the first step being to get dressed in warm clothes. The importance of this step cannot be overstated, as it prepared the individual for the external conditions, ensuring comfort and protection against the elements. Following the preparation, the individual proceeded to walk to the house door, a deliberate move that marked the beginning of the transition from the indoor environment to the outside world. The next step involved reaching towards the door handle, a gesture that symbolized the readiness to breach the barrier between the inside and the outside. With a firm grip on the handle, the individual then pushed the door open, effectively removing the physical barrier that stood between them and the open area they sought to enter. This act was not just a physical movement but a metaphorical crossing into a different space, one that is vast and unenclosed. The final step in this carefully choreographed sequence was to walk the body through the door. This movement was the culmination of the preceding actions, each of which was essential in its own right but served as a precursor to this moment. By stepping through the door, the individual completed the transition and successfully went outside into an open area. This series of actions, from getting dressed in warm clothes to finally stepping outside, was not arbitrary. It followed a specific order, as outlined by the provided temporal information. Each step was a prerequisite for the next, creating a chain of events that led to the desired outcome. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepA -> stepC",
+            "stepC -> stepE",
+            "stepE -> stepB",
+            "stepB -> stepD",
+            "stepD -> stepG",
+            "stepF -> stepA",
+        ]
+# END
+
+class PutKeyFobAwayInPocket:
+
+    title = "put key fob away in pocket"
+    steps = 7
+
+    def stepA(self):
+        return "move key towards pocket"
+
+    def stepG(self):
+        return "put key fob away in pocket"
+
+    def stepE(self):
+        return "open the pocket"
+
+    def stepC(self):
+        return "release hand from key"
+
+    def stepF(self):
+        return "release unlock button"
+
+    def stepB(self):
+        return "move key inside pocket"
+
+    def stepD(self):
+        return "find the pocket"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a news report about 'put key fob away in pocket'. In a sequence of actions that might seem mundane but are essential for the security and convenience of car owners, a person successfully puts their key fob away in their pocket. The process, though brief, involves a series of steps that must occur in a specific order to ensure the key fob is safely stowed away. The sequence begins with the individual releasing the unlock button on the key fob. This action is crucial as it signifies the end of its immediate use, typically after unlocking their vehicle. Following this, the person embarks on the task of finding the pocket where the key fob will be placed. This step is foundational, setting the stage for the subsequent actions. Once the pocket has been located, the individual proceeds to open the pocket. This action is necessary to allow for the key fob's entry. Concurrently, the person begins to move the key towards the pocket, a motion that bridges the gap between deciding to stow the key fob away and its actual placement. The key is then moved inside the pocket, a delicate maneuver that ensures the key fob is securely positioned within the confines of the fabric. This step is pivotal and marks the nearing of the process's completion. With the key fob inside the pocket, the individual releases their hand from the key. This action signifies that the key fob is now resting in its designated spot, no longer requiring the support of the hand. Finally, the person puts the key fob away in the pocket, concluding the sequence of events. This last step is both a physical and symbolic gesture, indicating that the key fob is now safely stowed away and the individual can proceed with their activities, assured that their key fob is secure. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepD -> stepE",
+            "stepD -> stepA",
+            "stepA -> stepB",
+            "stepE -> stepB",
+            "stepB -> stepC",
+            "stepC -> stepG",
+            "stepF -> stepD",
+        ]
+# END
+
+class RideAnElephant:
+
+    title = "ride an elephant"
+    steps = 7
+
+    def stepF(self):
+        return "decided to ride an elephant"
+
+    def stepB(self):
+        return "Get help onto the elephant"
+
+    def stepE(self):
+        return "Search for locations where elephants can be ridden"
+
+    def stepD(self):
+        return "Make a reservation online"
+
+    def stepA(self):
+        return "Go online via a computer or phone"
+
+    def stepC(self):
+        return "Show up to reservation"
+
+    def stepG(self):
+        return "ride an elephant"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a news report about 'ride an elephant'. In an adventurous turn of events, a local resident made the decision to embark on a unique journey - riding an elephant. This decision set off a series of carefully planned steps, ensuring the adventure was not only possible but also memorable. The journey began in the digital realm, where the individual went online via a computer or phone. This initial step was crucial, as it opened the door to the vast information available on the internet. With the world at their fingertips, the next logical step was to search for locations where elephants can be ridden. This search was not just about finding any location but finding the right one that would ensure a safe and enjoyable experience. Once the perfect location was identified, the next step was to make a reservation online. This process was streamlined and efficient, thanks to the preliminary research and the ease of digital transactions. The reservation was a commitment, a promise of the adventure that lay ahead. As the day of the reservation arrived, excitement was in the air. Showing up to the reservation marked the transition from planning to action. It was at this moment that the adventure truly began. Upon arrival, the individual sought help to get onto the elephant. This assistance was not just about physical support but also about ensuring safety and comfort for both the rider and the elephant. Finally, the moment of truth arrived - the ride on the elephant. This was not just a simple act of sitting on the elephant's back; it was the culmination of all the steps that had been carefully followed. It was an experience that brought together the thrill of adventure, the beauty of nature, and the bond between human and animal. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepA -> stepE",
+            "stepE -> stepD",
+            "stepD -> stepC",
+            "stepC -> stepB",
+            "stepB -> stepG",
+            "stepF -> stepA",
+        ]
+# END
+
+class UnlockBottomLock:
+
+    title = "unlock bottom lock"
+    steps = 7
+
+    def stepE(self):
+        return "stick key in bottom lock"
+
+    def stepC(self):
+        return "look at keyring"
+
+    def stepG(self):
+        return "unlock bottom lock"
+
+    def stepF(self):
+        return "unlock top lock"
+
+    def stepB(self):
+        return "select key for bottom lock"
+
+    def stepA(self):
+        return "turn key counter clockwise"
+
+    def stepD(self):
+        return "pull key out of top lock"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a news report about 'unlock bottom lock'. In a meticulous process that underscores the importance of sequence and precision, an individual embarked on the task of unlocking a bottom lock, a seemingly mundane activity that unfolded with a series of deliberate steps. The operation began not with the immediate engagement with the lock itself but with a preparatory action that might seem counterintuitive to the untrained eye. The individual first pulled a key out of the top lock, an action that set the stage for what was to come. Following this initial step, the person took a moment to look at their keyring. This pause in the process was not a sign of confusion but a necessary step to ensure that the correct key was selected for the bottom lock. The selection of the key was a critical point in the sequence, as using the wrong key could have resulted in a delay or, worse, a damaged lock. With the correct key identified, the individual proceeded to stick the key in the bottom lock. This action, while simple, was pivotal in the unlocking process. It was the physical manifestation of the individual's intent to unlock the lock and required both accuracy and a gentle touch to avoid damaging the key or the lock. The next step involved turning the key counter-clockwise. This motion, precise and deliberate, was the actual act of unlocking. It required not just physical strength but also an understanding of the lock's mechanism, as turning the key in the wrong direction could have rendered the effort futile. Interestingly, before this sequence of unlocking the bottom lock commenced, there was an action related to the top lock. The individual had unlocked the top lock and pulled the key out, a step that, while not directly related to the bottom lock, was part of the overall process of gaining access. This action highlighted the interconnectedness of tasks and the importance of completing preliminary steps before proceeding to the main objective. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepD -> stepC",
+            "stepC -> stepB",
+            "stepA -> stepG",
+            "stepB -> stepE",
+            "stepE -> stepA",
+            "stepF -> stepD",
+        ]
+# END
+
+class SitInTheFrontSeatOfTheCar:
+
+    title = "sit in the front seat of the car"
+    steps = 7
+
+    def stepC(self):
+        return "open the car door"
+
+    def stepD(self):
+        return "walk out of the house"
+
+    def stepB(self):
+        return "put clothes on"
+
+    def stepG(self):
+        return "sit in the front seat of the car"
+
+    def stepF(self):
+        return "decided to sit in the front seat of the car"
+
+    def stepE(self):
+        return "take a shower"
+
+    def stepA(self):
+        return "unlock the car door"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a news report about 'sit in the front seat of the car'. In a sequence of events that unfolded today, an individual successfully managed to sit in the front seat of their car, following a series of meticulously executed steps. The journey began with a decision that set everything into motion. The person decided to sit in the front seat of the car, a choice that would dictate the subsequent actions of their morning routine. Following the decision, the individual embarked on a personal preparation process, starting with taking a shower. The importance of cleanliness and the refreshing start it provides cannot be overstated, as it was the foundational step that led to the next action in the sequence. After drying off, the person proceeded to put clothes on, choosing an outfit suitable for the day's activities. This step was crucial as it not only adhered to social norms but also prepared them for the outside environment. Once appropriately dressed, the individual walked out of the house, marking a significant transition from the private to the public sphere. This movement was not just physical but also a psychological preparation for the day ahead. The next step involved unlocking the car door, a security measure that protects the vehicle from unauthorized access. With the car unlocked, the person then opened the car door, an action that bridged the gap between the outside world and the personal space within the car. Finally, the culmination of these carefully sequenced steps was the individual sitting in the front seat of the car. This act was not just about occupying a space but also about taking control of the vehicle and, by extension, the direction of the day's journey. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepB -> stepD",
+            "stepE -> stepB",
+            "stepD -> stepA",
+            "stepA -> stepC",
+            "stepC -> stepG",
+            "stepF -> stepE",
+        ]
+# END
+
+class AssembleTacosAsDesired:
+
+    title = "assemble tacos as desired"
+    steps = 7
+
+    def stepB(self):
+        return "Chop up vegetables"
+
+    def stepC(self):
+        return "Remove taco shells from package"
+
+    def stepE(self):
+        return "Place cheese on meat"
+
+    def stepD(self):
+        return "Place vegetables on cheese"
+
+    def stepA(self):
+        return "Place meat into taco shells"
+
+    def stepG(self):
+        return "assemble tacos as desired"
+
+    def stepF(self):
+        return "cook desired meat(s)"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a news report about 'assemble tacos as desired'. In a delightful culinary journey that brings together flavors, textures, and the joy of cooking, a simple yet intricate process unfolds in kitchens everywhere, aiming to assemble the perfect taco. The process, though seemingly straightforward, follows a precise sequence of steps, ensuring that each taco is not just food, but an experience. The journey begins with the cooking of the desired meat(s), a foundational step that sets the stage for the flavors to come. This initial step is crucial, as it involves selecting the right meats and cooking them to perfection, ensuring they are juicy, flavorful, and ready to be the star of the taco. Following the cooking of the meat, the next step involves a careful preparation of the vegetables. Vegetables are chopped up, a task that requires attention to detail to ensure they are of the right size and texture, ready to complement the meat with their freshness and crunch. Once the vegetables are prepared, the taco shells are removed from their package. This step might seem minor, but it is essential, marking the transition from preparation to assembly. The taco shells, once removed, await their filling, standing by as the canvas for the culinary masterpiece to come. With the meat cooked and the vegetables chopped, the meat is then placed into the taco shells. This step is pivotal, as it begins the actual assembly of the taco, filling the shells with the cooked meat that promises flavor and satisfaction. Following the placement of the meat, cheese is then placed on the meat. The cheese, with its melt-in-your-mouth quality, acts as a binder for the meat and vegetables, adding a layer of creamy texture and rich flavor that elevates the taco to new heights. The vegetables are then placed on the cheese, adding a fresh crunch and a burst of color to the taco. This step not only adds to the visual appeal of the taco but also balances the flavors, ensuring that each bite is a harmonious blend of savory, creamy, and fresh. Finally, the tacos are assembled as desired, marking the culmination of a process that is both an art and a science. This final step is where creativity shines, as each taco becomes a reflection of personal taste, preferences, and culinary flair. By adhering to the provided temporal information, the desired goal is achieved, resulting in tacos that are not just a meal, but a celebration of flavors, textures, and the joy of cooking."
+
+    def get_relations(self):
+        return [
+            "stepC -> stepA",
+            "stepB -> stepC",
+            "stepE -> stepD",
+            "stepD -> stepG",
+            "stepA -> stepE",
+            "stepF -> stepB",
+        ]
+# END
+
+class PutAwayPlasterKit:
+
+    title = "put away plaster kit"
+    steps = 7
+
+    def stepC(self):
+        return "make sure job is done"
+
+    def stepE(self):
+        return "find excess materials"
+
+    def stepF(self):
+        return "clean up the mess on the floor"
+
+    def stepG(self):
+        return "put away plaster kit"
+
+    def stepA(self):
+        return "gather up trash"
+
+    def stepB(self):
+        return "close the plaster kit"
+
+    def stepD(self):
+        return "look at wall"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a news report about 'put away plaster kit'. In a meticulous process that underscores the importance of organization and cleanliness, an individual embarked on the task of putting away a plaster kit, a task that might seem mundane but is essential in maintaining order and efficiency in workspaces. The sequence of events, as outlined, reveals a methodical approach to ensuring that every step is accounted for and executed in the correct order. The process began with the individual taking a moment to clean up the mess on the floor. This initial step is crucial as it not only clears the workspace but also sets the stage for the subsequent tasks. By removing debris and spillage, the individual could move freely and safely around the area, reducing the risk of accidents and ensuring that no materials were overlooked. Following the cleanup, the individual engaged in a thorough search for excess materials. This step is vital in ensuring that all resources are accounted for and that nothing goes to waste. By finding and setting aside these materials, the individual could ensure that they are either properly stored for future use or disposed of in an environmentally friendly manner. Simultaneously, the individual took the time to look at the wall, an action that might seem unrelated at first glance but is integral to the task at hand. This step allowed the individual to assess the work done and ensure that the application of plaster was satisfactory. It served as a moment of reflection and quality control, ensuring that the job was done to the best of their abilities. With the excess materials found and the quality of the work assessed, the individual then proceeded to gather up trash. This step is essential in maintaining a clean and organized workspace, preventing clutter, and ensuring that all waste materials are disposed of properly. The individual also took the necessary step to close the plaster kit. This action is crucial in preserving the remaining materials, preventing them from drying out or getting contaminated, and ensuring that the kit is ready for its next use. Finally, with all preparatory steps completed, the individual put away the plaster kit. This final step signifies the completion of the task, with the kit stored safely and the workspace left clean and orderly. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepE -> stepG",
+            "stepD -> stepC",
+            "stepC -> stepG",
+            "stepB -> stepG",
+            "stepA -> stepG",
+            "stepF -> stepE",
+            "stepF -> stepD",
+            "stepF -> stepB",
+            "stepF -> stepA",
+        ]
+# END
+
+class GetInformationOnTheClubFromFriend:
+
+    title = "Get information on the club from friend"
+    steps = 7
+
+    def stepF(self):
+        return "decided to Get information on the club from friend"
+
+    def stepD(self):
+        return "Start talking about clubs"
+
+    def stepG(self):
+        return "Get information on the club from friend"
+
+    def stepB(self):
+        return "Wait for friend to pick up"
+
+    def stepC(self):
+        return "Get the name of a club from friend"
+
+    def stepA(self):
+        return "Call a friend"
+
+    def stepE(self):
+        return "Have some small talk"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a news report about 'Get information on the club from friend'. In a recent unfolding of events, a person made a decisive move to gather information about a club from a friend. This decision set off a series of interactions that underscored the importance of communication and friendship in our daily lives. The journey began with the individual deciding to get information on the club from a friend. Recognizing the need for a direct conversation, the person took the first step by calling the friend. This action initiated the process, leading to a brief period of anticipation as they waited for the friend to pick up the phone. Upon the friend's response, the conversation kicked off with some small talk, a natural way to ease into the more focused topic of interest. This casual exchange set a friendly tone for the discussion, paving the way for a deeper conversation about clubs. Simultaneously, as the small talk unfolded, the topic gradually shifted towards clubs, marking the start of a more purposeful dialogue. The person expressed a keen interest in learning about a specific club, prompting the friend to share valuable information. The friend, responding to the interest shown, provided the name of a club. This piece of information was a crucial link in the chain of events, as it directly led to the acquisition of more detailed knowledge about the club. The exchange of information was not just about the name of the club but also about understanding what the club offers and why it might be of interest. Through this structured sequence of interactions—starting from the initial decision to call the friend, to engaging in small talk, and finally getting the name of the club—the person successfully gathered detailed information about the club from the friend. This process highlights the importance of communication and the value of having reliable friends who can be sources of valuable information. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepA -> stepB",
+            "stepB -> stepE",
+            "stepB -> stepD",
+            "stepE -> stepC",
+            "stepD -> stepC",
+            "stepC -> stepG",
+            "stepF -> stepA",
+        ]
+# END
+
+class DoSomethingExciting:
+
+    title = "do something exciting"
+    steps = 7
+
+    def stepG(self):
+        return "do something exciting"
+
+    def stepF(self):
+        return "decided to do something exciting"
+
+    def stepB(self):
+        return "enter the place"
+
+    def stepD(self):
+        return "go online to book trip"
+
+    def stepA(self):
+        return "Think of what want to do"
+
+    def stepC(self):
+        return "book the experience online"
+
+    def stepE(self):
+        return "go to the destination"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a news report about 'do something exciting'. In a world where the mundane often takes precedence, the desire to break free and experience something thrilling can be overwhelming. This narrative follows an individual's journey from the inception of an adventurous idea to the exhilarating execution of that very thought. It all began with a decision, a moment of clarity, or perhaps a need for escape. The individual decided to do something exciting, setting the stage for an unforgettable adventure. This decision sparked a thought process, leading them to think of what they truly wanted to do. The possibilities seemed endless, but the thrill of discovery and the allure of the unknown guided their thoughts. With a clear idea in mind, the next step was to make this dream a reality. They went online to book the trip, navigating through countless options, offers, and destinations. The digital world offered a gateway to the adventure that awaited, and with a few clicks, the experience was booked online. This act of booking not only confirmed their commitment but also brought them a step closer to the adventure they so eagerly anticipated. The anticipation built as they prepared to go to the destination. Packing bags, checking itineraries, and imagining the experiences that lay ahead filled them with an indescribable excitement. Finally, the day arrived, and they set off, leaving behind the familiar to embrace the unknown. Upon arrival, they entered the place that promised to deliver the excitement they sought. It was here, in this new and unfamiliar setting, that they did something exciting. The experience surpassed their expectations, offering not just thrills but also a profound sense of fulfillment and joy. By adhering to the provided temporal information, the desired goal is achieved. This journey from a mere thought to an exhilarating reality showcases the power of decision-making, planning, and execution. It serves as a reminder that the pursuit of excitement and adventure is not just about the destination but also about the journey that leads there."
+
+    def get_relations(self):
+        return [
+            "stepA -> stepD",
+            "stepD -> stepC",
+            "stepC -> stepE",
+            "stepE -> stepB",
+            "stepB -> stepG",
+            "stepF -> stepA",
+        ]
+# END
+
+class PickOutAWorkoutPlan:
+
+    title = "pick out a workout plan"
+    steps = 7
+
+    def stepD(self):
+        return "make a list of cons for the plan"
+
+    def stepB(self):
+        return "decide if the plan is suitable"
+
+    def stepF(self):
+        return "find a workout plan"
+
+    def stepC(self):
+        return "make a list of pros for the plan"
+
+    def stepG(self):
+        return "pick out a workout plan"
+
+    def stepA(self):
+        return "compare the plan to other available plans"
+
+    def stepE(self):
+        return "see if the pros outweigh the cons"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a news report about 'pick out a workout plan'. In a world where fitness and health are increasingly becoming priorities for many, the journey to finding the perfect workout plan is both exciting and daunting. The process involves several critical steps, each designed to ensure that the chosen plan aligns with personal goals, preferences, and lifestyle. The journey begins with an individual's decision to find a workout plan. This initial step is crucial as it sets the stage for what comes next. Once the decision is made, the individual embarks on a comprehensive search, exploring various workout plans available. This exploration is not just about what's out there but also about reflecting on one's own needs and how different plans could meet them. As part of this reflective process, the individual makes a list of pros for the plan. This list highlights the benefits and positive aspects of the plan, such as its suitability for the individual's fitness level, the variety of exercises it includes, and how it aligns with the individual's fitness goals. Concurrently, a list of cons is also made. This list addresses potential drawbacks, such as the plan's intensity, the time commitment required, and any equipment that might be needed. With both lists at hand, the individual then proceeds to compare the plan to other available plans. This comparison is not just about the workouts themselves but also about how each plan fits into the individual's life. It's a critical step that helps narrow down the options to those that are truly viable. Following the comparison, the individual engages in a crucial evaluation process: seeing if the pros outweigh the cons. This step is about weighing the benefits against the drawbacks in a way that is both objective and personal. It's about understanding what compromises, if any, are worth making and what aspects are non-negotiable. Based on this thorough evaluation, the individual is then able to decide if the plan is suitable. This decision is not made lightly. It considers all the information gathered and evaluated in the previous steps, ensuring that the choice is informed and well-considered. Finally, once the suitability of the plan is confirmed, the individual can confidently pick out a workout plan. This final step is the culmination of a thoughtful and meticulous process, one that ensures the chosen plan is not just a good workout plan but the right workout plan for the individual. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepA -> stepB",
+            "stepC -> stepE",
+            "stepB -> stepG",
+            "stepD -> stepE",
+            "stepE -> stepB",
+            "stepF -> stepA",
+            "stepF -> stepC",
+            "stepF -> stepD",
+        ]
+# END
+
+class ConnectPhoneToTheWifi:
+
+    title = "connect phone to the wifi"
+    steps = 7
+
+    def stepB(self):
+        return "type in password"
+
+    def stepD(self):
+        return "locate settings app"
+
+    def stepE(self):
+        return "open connections tab"
+
+    def stepA(self):
+        return "open settings app"
+
+    def stepC(self):
+        return "find wifi network"
+
+    def stepG(self):
+        return "connect phone to the wifi"
+
+    def stepF(self):
+        return "unlock the phone screen"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a news report about 'connect phone to the wifi'. In today's digital age, connecting a phone to a Wi-Fi network is a common yet crucial task for many. A recent step-by-step guide has been released, detailing the process involved in establishing this connection. The guide outlines a series of actions, each dependent on the completion of the previous step, ensuring a smooth and successful connection. The process begins with the user unlocking their phone screen. This initial step is essential as it grants access to the phone's functionalities and applications. Following this, the user must locate the settings app on their device. This app is the gateway to adjusting the phone's various configurations, including its network connections. Once the settings app has been opened, the user is directed to open the connections tab. This section of the settings app specifically deals with the phone's network and connectivity options, including Wi-Fi, Bluetooth, and mobile data. The next step involves finding the Wi-Fi network the user wishes to connect to. This step is crucial as it requires the user to identify and select the correct network from a list of available networks. After selecting the desired Wi-Fi network, the user is prompted to type in the password for the network. This security measure ensures that only authorized users can access the network. Upon successfully entering the correct password, the phone is finally able to connect to the Wi-Fi network. This detailed guide, with its clear and sequential steps, has been praised for its simplicity and effectiveness. By adhering to the provided temporal information, the desired goal is achieved, allowing users to connect their phones to Wi-Fi networks without confusion or delay."
+
+    def get_relations(self):
+        return [
+            "stepD -> stepA",
+            "stepA -> stepE",
+            "stepE -> stepC",
+            "stepC -> stepB",
+            "stepB -> stepG",
+            "stepF -> stepD",
+        ]
+# END
+
+class PracticeTurningBodyOverAndLandingOnFeet:
+
+    title = "practice turning body over and landing on feet"
+    steps = 7
+
+    def stepA(self):
+        return "place protective mats down"
+
+    def stepF(self):
+        return "practice putting hands on the ground and shifting weight"
+
+    def stepE(self):
+        return "practice for exercise"
+
+    def stepC(self):
+        return "stretch for exercise"
+
+    def stepD(self):
+        return "find cleared area in field"
+
+    def stepG(self):
+        return "practice turning body over and landing on feet"
+
+    def stepB(self):
+        return "remove any jewelry"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a news report about 'practice turning body over and landing on feet'. In a local field, a group of gymnastics enthusiasts gathered to master the art of flipping. The goal was clear: to practice turning their bodies over and landing on their feet with grace and safety. The process, meticulously planned and executed, began with the essential first step of finding a cleared area in the field. This ensured a safe environment, free from obstacles that could pose risks during the practice. Once the ideal spot was chosen, the participants took the necessary precaution of removing any jewelry. This precautionary measure was to prevent any injuries or accidents that could occur from jewelry getting caught during the physical activity. Safety was a priority, and this step was crucial in ensuring that the practice session would be free from unnecessary interruptions. Following the removal of jewelry, the next step was to place protective mats down on the cleared area. These mats were critical in providing a soft landing surface, thereby reducing the risk of injuries during the practice of flips. The participants understood the importance of this step, as it directly contributed to their safety and confidence while attempting the flips. With the protective mats securely in place, the participants proceeded to stretch for exercise. Stretching was an integral part of the preparation, as it helped to warm up their muscles, increase flexibility, and reduce the risk of muscle strains. This step was not only about physical readiness but also about mentally preparing themselves for the task ahead. After a thorough stretching session, the group moved on to practice putting their hands on the ground and shifting their weight. This exercise was crucial in building the foundational skills needed for successfully turning their bodies over and landing on their feet. It allowed them to understand the mechanics of the movement and to gradually build their confidence. The practice for exercise then transitioned into the main event: practicing turning the body over and landing on feet. This was the moment they had been preparing for, and with each attempt, their technique improved. The participants were able to apply what they had learned from the previous steps, demonstrating the effectiveness of their methodical approach to learning the flip. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepD -> stepB",
+            "stepD -> stepA",
+            "stepA -> stepC",
+            "stepB -> stepC",
+            "stepC -> stepE",
+            "stepE -> stepG",
+            "stepF -> stepD",
+        ]
+# END
+
+class LearnANewSongToSing:
+
+    title = "learn a new song to sing"
+    steps = 8
+
+    def stepE(self):
+        return "listen to several songs"
+
+    def stepB(self):
+        return "listen to the song several times"
+
+    def stepF(self):
+        return "look up the lyrics"
+
+    def stepH(self):
+        return "learn a new song to sing"
+
+    def stepG(self):
+        return "decided to learn a new song to sing"
+
+    def stepD(self):
+        return "look up the chords"
+
+    def stepC(self):
+        return "practice singing the song"
+
+    def stepA(self):
+        return "pick out a catchy song"
+
+    #Let's think about a narrative to link aforementioned events in the correct temporal order.
+    def get_narrative(self):
+        return "This is a news report about 'learn a new song to sing'. In a delightful journey of musical exploration, an individual embarked on the adventure of learning a new song to sing. The process, marked by dedication and a systematic approach, began with a decision that set everything in motion. The person decided to learn a new song to sing, a decision that sparked the beginning of an enriching experience. Following this decision, the first step taken was to listen to several songs. This phase was crucial as it opened up a world of possibilities and introduced a variety of melodies and rhythms. The exploration led to the next significant milestone: picking out a catchy song. This choice was pivotal, as it determined the direction of the learning journey. With a catchy song selected, the individual dove deeper into the learning process. Three critical actions were undertaken simultaneously to ensure a comprehensive understanding of the song. The person looked up the lyrics, a step that provided insight into the song's message and emotional depth. Concurrently, the chords were looked up, laying the groundwork for the musical accompaniment that would enhance the singing. Additionally, the song was listened to several times. This repetitive listening was essential for internalizing the melody and nuances of the performance. Armed with a thorough understanding of the lyrics, chords, and melody, the individual moved on to the next phase: practice singing the song. This stage was where the culmination of previous efforts was put to the test. Through practice, the person honed their vocal skills, worked on the delivery, and fine-tuned their performance to align with the song's essence. The culmination of this journey was the moment the individual learned a new song to sing. This achievement was not just about mastering the lyrics, melody, and chords. It was about the joy of music, the personal growth experienced through the process, and the satisfaction of accomplishing a goal. By adhering to the provided temporal information, the desired goal is achieved."
+
+    def get_relations(self):
+        return [
+            "stepE -> stepA",
+            "stepA -> stepF",
+            "stepA -> stepD",
+            "stepA -> stepB",
+            "stepF -> stepC",
+            "stepD -> stepC",
+            "stepB -> stepC",
+            "stepC -> stepH",
+            "stepG -> stepE",
+        ]
+
+# END
+
